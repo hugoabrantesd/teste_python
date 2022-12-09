@@ -36,8 +36,8 @@ class CovidTestCase(TestCase):
         #model = model_to_dict(covid, exclude=["id"])
 
         #self.assertEquals(data, model)
-        # self.assertNotEquals(model["logradouro"], "")
-        
+        #self.assertNotEquals(model["logradouro"], "")
+
         self.assertEquals(data["uf"], "PB")
         self.assertGreaterEqual(covid.suspects, 80)
-        self.assertIn("2022", covid.datetime)
+        self.assertIn("2021", covid.datetime)
