@@ -40,4 +40,4 @@ class CovidTestCase(TestCase):
 
         self.assertEquals(data["uf"], "PB")
         self.assertGreaterEqual(covid.suspects, 80)
-        self.assertIn("2022", covid.datetime)
+        self.assertIn("2021", covid.datetime)
